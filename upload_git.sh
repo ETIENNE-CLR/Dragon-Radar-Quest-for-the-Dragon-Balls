@@ -27,7 +27,7 @@ brancheName="main"
 git branch --set-upstream-to=origin/$brancheName $brancheName
 
 # Nom du Repositories
-urlRepo="git@github.com:ETIENNE-CLR/Dragon-Ball-Radar.git"
+urlRepo="git@github.com:ETIENNE-CLR/Dragon-Radar-Quest-for-the-Dragon-Balls.git"
 git remote set-url origin $urlRepo
 git config --global credential.helper cache
 
