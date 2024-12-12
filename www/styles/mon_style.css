@@ -24,8 +24,10 @@ body {
     align-items: center;
 }
 
-div {
+main {
     border: 1px solid black;
     width: 150px;
     height: 150px;
+    border-radius: 100px;
+    display: block;
 }
