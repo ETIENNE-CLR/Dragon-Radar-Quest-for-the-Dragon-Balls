@@ -1,0 +1,21 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Arial, Geneva, Verdana, sans-serif;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,48 +1,63 @@
 :root {
-    --CONTAINER-SIZE: 150;
-    --RADAR-COLOR: "grey";
+    --CONTAINER-SIZE: 325px;
+
+    --RADAR-METAL-COLOR: #a0a0a0;
+    --RADAR-METAL-LINE-COLOR: #787878;
+    --RADAR-METAL-LINE-WIDTH: 2.6px;
+
+    --RADAR-VIEW-COLOR: #12f900;
+    --RADAR-VIEW-LINE-COLOR: #0a9100;
+    --RADAR-VIEW-LINE-WIDTH: 1.5px;
 }
 
-html {
-    margin: 0;
-    padding: 0;
-    width: auto;
+#btnDBRadar-cont {
+    display: flex;
+    justify-content: center;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: 100vh;
-    transform: scale(1);
+#btnDBRadar {
+    padding: 3.6% 0;
+    width: 27%;
+    border-radius: 5px;
+    background-color: var(--RADAR-METAL-COLOR);
+    opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(to right, var(--RADAR-METAL-LINE-COLOR), var(--RADAR-METAL-LINE-COLOR) var(--RADAR-METAL-LINE-WIDTH), var(--RADAR-METAL-COLOR) var(--RADAR-METAL-LINE-WIDTH), var(--RADAR-METAL-COLOR));
+    border: var(--RADAR-METAL-LINE-WIDTH) solid var(--RADAR-METAL-LINE-COLOR);
+    box-shadow: inset 0px 0px 3px 0px #ffffff;
+}
+
+#bodyDBRadar-cont {
+    width: var(--CONTAINER-SIZE);
+    height: var(--CONTAINER-SIZE);
     display: flex;
     flex-direction: column;
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Arial, Geneva, Verdana, sans-serif;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: center;
     align-items: center;
 }
 
-main {
-    border: 1px solid black;
-    width: var(--CONTAINER-SIZE)px;
-    height: var(--CONTAINER-SIZE)px;
-    border-radius: 100px;
-    display: block;
-}
-
-#btnDBRadar {
-    width: 30%;
-    border-radius: 12px;
-    background-color: var(--RADAR-COLOR);
-}
-
 #bodyDBRadar {
-   width: auto;
-   border: 4px solid var(--RADAR-COLOR);
-   border-radius: 12px;
+    /* Radar */
+    box-shadow: inset 10px -5px 20px 0px black;
+    width: -webkit-fill-available;
+    height: inherit;
+    border: 16px solid var(--RADAR-METAL-COLOR);
+    border-radius: 10000px;
+    background-color: var(--RADAR-VIEW-COLOR);
+    opacity: 0.8;
+    background-image:
+        linear-gradient(var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), transparent var(--RADAR-VIEW-LINE-WIDTH)), linear-gradient(to right, var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), var(--RADAR-VIEW-COLOR) var(--RADAR-VIEW-LINE-WIDTH));
+    background-size: 18px 18px;
+    background-position: 53% 53%;
+    box-shadow: inset 10px -5px 20px 0px black;
+    filter: drop-shadow(1px 2px 10px black);
 
-   background-color: greenyellow;
+    /* Pointeur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyDBRadar img {
+    width: 7%;
 }
