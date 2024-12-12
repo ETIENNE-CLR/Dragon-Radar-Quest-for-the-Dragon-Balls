@@ -10,6 +10,16 @@
     --RADAR-VIEW-LINE-WIDTH: 1.5px;
 }
 
+#displayRadar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 #btnDBRadar-cont {
     display: flex;
     justify-content: center;
