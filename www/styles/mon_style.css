@@ -1,5 +1,6 @@
 :root {
     --CONTAINER-SIZE: 150;
+    --RADAR-COLOR: "grey";
 }
 
 html {
@@ -26,8 +27,22 @@ body {
 
 main {
     border: 1px solid black;
-    width: 150px;
-    height: 150px;
+    width: var(--CONTAINER-SIZE)px;
+    height: var(--CONTAINER-SIZE)px;
     border-radius: 100px;
     display: block;
+}
+
+#btnDBRadar {
+    width: 30%;
+    border-radius: 12px;
+    background-color: var(--RADAR-COLOR);
+}
+
+#bodyDBRadar {
+   width: auto;
+   border: 4px solid var(--RADAR-COLOR);
+   border-radius: 12px;
+
+   background-color: greenyellow;
 }
