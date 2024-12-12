@@ -44,7 +44,7 @@
     border: 16px solid var(--RADAR-METAL-COLOR);
     border-radius: 10000px;
     background-color: var(--RADAR-VIEW-COLOR);
-    opacity: 0.8;
+    opacity: 0.9;
     background-image:
         linear-gradient(var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), transparent var(--RADAR-VIEW-LINE-WIDTH)), linear-gradient(to right, var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), var(--RADAR-VIEW-COLOR) var(--RADAR-VIEW-LINE-WIDTH));
     background-size: 18px 18px;
