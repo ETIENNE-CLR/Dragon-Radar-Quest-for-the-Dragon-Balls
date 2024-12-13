@@ -7,3 +7,12 @@
 function GetRandomInt(min = 1, max = 100) {
     return Math.floor(min + Math.random() * (max - min + 1));
 }
+
+/**
+ * Méthode qui permet de cacher toutes les pages de l'application
+ */
+function hideAllPages() {
+    page_Home.style.display = "none";
+    page_Radar.style.display = "none";
+    page_Shenron.style.display = "none";
+}
