@@ -46,11 +46,19 @@
 
 ## 🌟 Améliorations prévues
 1. **Invocation de combattants** : Grâce à des cristaux de ki, vous pourrez invoquer des combattants parmi l'univers de Dragon Ball.
-2. **Combattants** : Vous pourrez obtenir vos personnages préférés de la série et les entraîner afin qu'ils soient toujours prêt pour défendre la terre de potentiels menaces.
-    - Si un des vos combattants meurt en combat, vous pourrez le ramener à la vie grâce aux Dragon Ball. 
-3. **Mode multijoueur** : Collaboration en ligne pour trouver les boules plus rapidement.
+2. **Combattants** : Vous pourrez obtenir vos personnages préférés de la série et les entraîner afin qu'ils soient toujours prêt pour défendre la Terre de potentiels menaces.
+    - Si un des vos combattants meurt en combat, vous pourrez le ramener à la vie grâce aux Dragon Ball.
+    - Si vous n'entraînez pas vos combattants, ils perdront petit à petit leur pouvoir.
+3. **Souhaits de Shenron** : Shenron pourra :
+    - Ressusciter un de vos combattants mort au combat
+    - Faire baisser votre niveau de joueur (pour baisser le niveau des ennemis et pour réduire la distance où sont dispersés les Dragon Ball)
+    - Vous donnez des Zénis (les Zenis vous permettent d'entraîner vos combattants)
+    - Vous donnez des cristaux de ki (les cristaux de ki vous permettent d'invoquer des combattants)
+4. **Mode multijoueur** : Collaboration en ligne pour trouver les boules plus rapidement.
     - Vous pourrez aussi échanger vos Dragon Ball entre joueurs
-- **Difficulté adoptive** : plus vous aurez un niveau de joueur élevé, plus les Dragon Ball seront éparpillés plus loin.
+5. **Difficulté adoptive** : plus vous aurez un niveau de joueur élevé, plus les Dragon Ball seront éparpillés plus loin.
+6. **Combats d'art martiaux** : Lorsque la Terre sera menacé, vous participerez avec une équipe composée de 5 de vos combattants dans d'épique combats pour essayer de protéger la Terre.
+    - Si vous n'avais pas réussi à protéger la Terre, vous perdrez toute votre progression
 
 ---
 © 2024 Étienne Caulier - Ce projet est réalisé à des fins éducatives et de divertissement. Ce projet n’a aucun lien officiel avec la franchise Dragon Ball, Toei Animation ou Akira Toriyama.
