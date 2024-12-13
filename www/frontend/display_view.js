@@ -14,14 +14,14 @@ if (DragonsBalls.length > 0) {
     DragonsBalls.forEach(uneDragonBall => {
         // Container
         const db_show = document.createElement("div");
-        db_show.classList.add("d-flex");
-        db_show.classList.add(ALIGNEMENTS[GetRandomInt(0, ALIGNEMENTS.length)]);
+        db_show.classList.add("d-flex", "col-2", "m-1");
+        db_show.classList.add(ALIGNEMENTS[GetRandomInt(0, ALIGNEMENTS.length - 1)]);
         div_dragonBall_container.appendChild(db_show);
 
         // Image
         const img_ball = document.createElement("img");
-        img_ball.alt = `Dragon Ball à ${5} étoile${"s"}`;
-        img_ball.src = `assets/img/dragon_ball/dragon_ball_${5.toString().padStart('0', 2)}.png`;
+        img_ball.alt = `Dragon Ball à ${uneDragonBall['nb-stars']} étoile${"s"}`;
+        img_ball.src = `assets/img/dragon_balls/dragon_ball_${uneDragonBall['nb-stars'].toString().padStart(2, '0')}.png`;
         db_show.appendChild(img_ball);
     });
 } else {

@@ -1,3 +1,9 @@
+/* Polices importées */
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../assets/fonts/gagalin/Gagalin-Regular.otf');
+}
+
 body {
     background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
@@ -5,10 +11,49 @@ body {
     background-size: cover;
 }
 
-div#dragonBallsIndicator {
+/* Container des dragon balls */
+#dragonBallsIndicator {
     background-color: #2d2e2b;
 }
 
+/* chaque dragon ball */
 #dragonBall-container img {
-    width: 10%;
+    width: 100%;
+}
+
+/* barre de navigation */
+#home_navbar {
+    top: 75%;
+    transform: translate(0, -50%);
+}
+
+#home_navbar div:hover {
+    cursor: pointer;
+}
+
+#home_navbar div.disabled {
+    filter: brightness(0.4);
+    cursor: no-drop;
+}
+
+#home_navbar div:active {
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+#home_navbar img {
+    /* max-height: 165px; */
+    width: 70%;
+}
+
+#home_navbar p {
+    font-size: 20px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-family: 'Gagalin';
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }

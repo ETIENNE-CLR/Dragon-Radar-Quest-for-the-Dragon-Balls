@@ -1,9 +1,9 @@
 :root {
-    --CONTAINER-SIZE: 325px;
+    --CONTAINER-SIZE: 325;
 
     --RADAR-METAL-COLOR: #a0a0a0;
     --RADAR-METAL-LINE-COLOR: #787878;
-    --RADAR-METAL-LINE-WIDTH: 2.6px;
+    --RADAR-METAL-LINE-WIDTH: 2.6;
 
     --RADAR-VIEW-COLOR: #12f900;
     --RADAR-VIEW-LINE-COLOR: #0a9100;
@@ -32,14 +32,14 @@
     background-color: var(--RADAR-METAL-COLOR);
     opacity: 0.8;
     background-size: 10px 10px;
-    background-image: repeating-linear-gradient(to right, var(--RADAR-METAL-LINE-COLOR), var(--RADAR-METAL-LINE-COLOR) var(--RADAR-METAL-LINE-WIDTH), var(--RADAR-METAL-COLOR) var(--RADAR-METAL-LINE-WIDTH), var(--RADAR-METAL-COLOR));
-    border: var(--RADAR-METAL-LINE-WIDTH) solid var(--RADAR-METAL-LINE-COLOR);
+    background-image: repeating-linear-gradient(to right, var(--RADAR-METAL-LINE-COLOR), var(--RADAR-METAL-LINE-COLOR) calc(var(--RADAR-METAL-LINE-WIDTH) * 1px), var(--RADAR-METAL-COLOR) calc(var(--RADAR-METAL-LINE-WIDTH) * 1px), var(--RADAR-METAL-COLOR));
+    border: calc(var(--RADAR-METAL-LINE-WIDTH) * 1px) solid var(--RADAR-METAL-LINE-COLOR);
     box-shadow: inset 0px 0px 3px 0px #ffffff;
 }
 
 #bodyDBRadar-cont {
-    width: var(--CONTAINER-SIZE);
-    height: var(--CONTAINER-SIZE);
+    width: calc(var(--CONTAINER-SIZE)*1px);
+    height: calc(var(--CONTAINER-SIZE) * 1px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@
     background-color: var(--RADAR-VIEW-COLOR);
     opacity: 0.9;
     background-image:
-        linear-gradient(var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), transparent var(--RADAR-VIEW-LINE-WIDTH)), linear-gradient(to right, var(--RADAR-VIEW-LINE-COLOR) var(--RADAR-VIEW-LINE-WIDTH), var(--RADAR-VIEW-COLOR) var(--RADAR-VIEW-LINE-WIDTH));
+        linear-gradient(var(--RADAR-VIEW-LINE-COLOR) calc(var(--RADAR-VIEW-LINE-WIDTH) * 1px), transparent calc(var(--RADAR-VIEW-LINE-WIDTH) * 1px)), linear-gradient(to right, var(--RADAR-VIEW-LINE-COLOR) calc(var(--RADAR-VIEW-LINE-WIDTH) * 1px), var(--RADAR-VIEW-COLOR) calc(var(--RADAR-VIEW-LINE-WIDTH) * 1px));
     background-size: 18px 18px;
     background-position: 53% 53%;
     box-shadow: inset 10px -5px 20px 0px black;

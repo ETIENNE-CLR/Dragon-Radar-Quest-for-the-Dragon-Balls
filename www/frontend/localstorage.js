@@ -9,11 +9,26 @@ const DEFAULT_DATA =
     },
     "dragons-balls": [
         {
-            "nb-stars": 2
+            "nb-stars": 1
         },
-        {
-            "nb-stars": 6
-        }
+        // {
+        //     "nb-stars": 2
+        // },
+        // {
+        //     "nb-stars": 3
+        // },
+        // {
+        //     "nb-stars": 4
+        // },
+        // {
+        //     "nb-stars": 5
+        // },
+        // {
+        //     "nb-stars": 6
+        // },
+        // {
+        //     "nb-stars": 7
+        // }
     ]
 }
 
@@ -33,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Chaque clé
         return keys1.every(key => keys2.includes(key));
     }
-    
+
     // Vérifier que le localStorage contient des données correctes
     let actualData = get_json_data();
     let data = (haveSameKeys(actualData)) ? actualData : DEFAULT_DATA;
