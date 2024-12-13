@@ -4,3 +4,11 @@ body {
     background-position: 50%;
     background-size: cover;
 }
+
+div#dragonBallsIndicator {
+    background-color: #2d2e2b;
+}
+
+#dragonBall-container img {
+    width: 10%;
+}

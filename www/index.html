@@ -12,8 +12,14 @@
 </head>
 
 <body>
-    <header>
-    </header>
+    <div id="dragonBallsIndicator" class="col-12 pt-5 position-absolute top-50 start-50 translate-middle">
+        <h1 class="h2 text-center text-light mb-3">Vos Dragon Balls :</h1>
+        <div id="dragonBall-container" class="d-flex justify-content-around">
+            <div class="col-1">
+                <img class="displayedDragonBall" src="assets/img/dragon_balls/dragon_ball_02.png" alt="Dragon Ball à 2 étoiles">
+            </div>
+        </div>
+    </div>
     <!-- <div id="displayRadar">
         <main id="radar">
             <div id="btnDBRadar-cont">
@@ -28,5 +34,7 @@
     </div> -->
 </body>
 <script src="styles/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/localstorage.js"></script>
+<!-- <script src="frontend/display_view.js"></script> -->
 
 </html>

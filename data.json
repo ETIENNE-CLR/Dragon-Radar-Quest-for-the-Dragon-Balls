@@ -1,9 +1,16 @@
 {
-    "dragon-balls-count": 2,
     "profil": {
         "name": "Etienne",
         "level": 15,
         "nb-times-shenron": 2,
-        "image": "url" // de la liste disponible
-    }
+        "image": "url"
+    },
+    "dragons-balls": [
+        {
+            "nb-stars": 2
+        },
+        {
+            "nb-stars": 6
+        }
+    ]
 }
