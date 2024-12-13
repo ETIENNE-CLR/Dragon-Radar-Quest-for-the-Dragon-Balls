@@ -32,9 +32,7 @@ function GeolocalisationUser() {
         navigator.geolocation.getCurrentPosition(position => {
             // Récupérer la position de l'utilisateur
             const userCoords = [position.coords.latitude, position.coords.longitude];
-            console.log(userCoords);
-
-
+            alert(userCoords);
         });
     } else {
         // Quitter l'appication

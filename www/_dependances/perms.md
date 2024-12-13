@@ -3,7 +3,7 @@ Sur Android (et iOS), tu dois demander l'autorisation de localisation. Cordova l
 
 Installation :
 ```bash
-cordova plugin add cordova-plugin-permissions
+cordova plugin add cordova-plugin-android-permissions
 ```
 
 Utilisation :
