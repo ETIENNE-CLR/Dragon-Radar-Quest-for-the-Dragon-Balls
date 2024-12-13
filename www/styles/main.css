@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    /* background-image: url('../assets/img/background.jpg'); */
+    background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -65,7 +65,7 @@ body {
     transform: translate(0, -50%);
 }
 
-.retour {
+.retourHome {
     top: 75%;
     right: 0;
     border: none;
@@ -80,7 +80,7 @@ body {
     letter-spacing: 1px;
 }
 
-.retour:active {
+.retourHome:active {
     transform: scale(0.9);
     transition: all 0.2s;
 }

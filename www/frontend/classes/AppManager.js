@@ -6,28 +6,29 @@ class AppManager {
     actualDragonBalls;
     kmPerimeter;
 
-    constructor(user, actualDragonBalls, kmPerimeter) {
-        this.user = user;
-        this.actualDragonBalls = actualDragonBalls;
+    constructor(userObject, actualDragonBallsJson, kmPerimeter) {
+        this.user = userObject;
         this.kmPerimeter = kmPerimeter;
+
+        this.actualDragonBalls = [];
+        actualDragonBallsJson.forEach(dragonball => {
+            this.actualDragonBalls.push(new DragonBall(dragonball["nb-stars"], dragonball.coordonnees));
+        });
     }
 
     disperserDragonBall() {
+        // Init du nombre d'étoiles disponible
+        let starsAvalaible = Array.from({ length: NB_DRAGON_BALL }, (_, i) => i + 1);
+
         // Méthode qui retourne un nombre d'étoiles disponibles pour les Dragon Ball
-        let starsAvalaible = [];
-        for (let h = 0; h < NB_DRAGON_BALL; h++) {
-            starsAvalaible.push(h + 1);
-        }
         function getRandomStars() {
             let e = GetRandomValueFromList(starsAvalaible);
-            starsAvalaible.remove(e);
+            starsAvalaible = starsAvalaible.filter(star => star !== e);
             return e;
         }
 
-        // Initialisation des variables
-        this.actualDragonBalls = []; // sous-entendu
-
         // Générer 7 nouvelles Dragon Ball
+        this.actualDragonBalls = []; // sous-entendu
         for (let i = 0; i < NB_DRAGON_BALL; i++) {
             this.actualDragonBalls.push(
                 new DragonBall(
@@ -39,20 +40,16 @@ class AppManager {
     }
 
     #generateNewCoordonates() {
-        let userCoord = getUserCoord();
-        let newCoord = [
-             56.56476,
-             67.47576
-        ];
+        // let userCoord = getUserCoord();
+        let newCoord = [];
 
         // Générer des coordonnées GPS à partir de `userCoord` dans un rayon de `this.kmPerimeter` km
         // ...
-        
+
+        newCoord = [
+            46.25820656496626,
+            6.227332430726359
+        ];
         return newCoord;
     }
-}
-
-// OH SALE PUTE ! REECRIT CETTE FONCTION DANS LE BON FICHIER, ENCULE DE TES MORTS
-function GetRandomValueFromList(list) {
-    return list[GetRandomInt(0, list.length - 1)];
 }

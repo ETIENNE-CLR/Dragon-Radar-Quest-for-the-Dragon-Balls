@@ -9,11 +9,10 @@ function GetRandomInt(min = 1, max = 100) {
 }
 
 /**
- * Méthode qui permet de cacher toutes les pages de l'application
+ * Méthode qui permet de retourner un élément aléatoire d'une liste
+ * @param {Array} list La liste
+ * @returns L'élement aléatoire de la liste
  */
-function hideAllPages() {
-    page_Home.style.display = "none";
-    page_Radar.style.display = "none";
-    page_Shenron.style.display = "none";
-    console.log('Toutes les pages ont été cachées');
+function GetRandomValueFromList(list) {
+    return list[GetRandomInt(0, list.length - 1)];
 }

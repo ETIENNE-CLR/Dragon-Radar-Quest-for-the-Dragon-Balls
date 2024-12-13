@@ -1,4 +1,13 @@
 /**
+ * Méthode qui permet de cacher toutes les pages de l'application
+ */
+function hideAllPages() {
+    page_Home.style.display = "none";
+    page_Radar.style.display = "none";
+    page_Shenron.style.display = "none";
+}
+
+/**
  * Fonction pour afficher la page d'accueil
  */
 function displayHomePage(player) {
@@ -17,7 +26,7 @@ function displayHomePage(player) {
             // Container
             const db_show = document.createElement("div");
             db_show.classList.add("d-flex", "col-2", "m-1");
-            db_show.classList.add(ALIGNEMENTS[GetRandomInt(0, ALIGNEMENTS.length - 1)]);
+            db_show.classList.add(GetRandomValueFromList(ALIGNEMENTS));
             div_dragonBall_container.appendChild(db_show);
 
             // Image
@@ -47,6 +56,7 @@ function displayHomePage(player) {
 /**
  * Fonction pour afficher la page de radar
  */
+document.getElementById('btn_toRadar').addEventListener('click', displayRadarPage);
 function displayRadarPage() {
     hideAllPages();
     page_Radar.style.display = 'block';
@@ -54,7 +64,8 @@ function displayRadarPage() {
 
 /**
  * Fonction pour afficher la page de shenron
- */
+*/
+document.getElementById('btn_toShenron').addEventListener('click', displayShenronPage);
 function displayShenronPage() {
     hideAllPages();
     page_Shenron.style.display = 'block';
