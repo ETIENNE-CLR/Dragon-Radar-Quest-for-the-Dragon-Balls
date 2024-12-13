@@ -1,0 +1,61 @@
+{
+    "options": {
+        "kmPerimeter": 200
+    },
+    "player": {
+        "nb-voeux-realise": 2,
+        "hand": [
+            {
+                "nb-stars": 1,
+                "coordonnees": [
+                    6.1118,
+                    6.1118
+                ]
+            }
+        ]
+    },
+    "dragon-ball": [
+        {
+            "nb-stars": 2,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 3,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 4,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 5,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 6,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 7,
+            "coordonnees": [
+                6.1118,
+                6.1118
+            ]
+        }
+    ]
+}

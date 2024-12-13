@@ -1,10 +1,21 @@
+/**
+ * Classe Player qui signifie un joueur
+ */
 class Player {
-    constructor(PlayerData) {
-        this.dragonBalls = [];
+    hand;
+    nbVoeuxRealise;
 
-        for (let a = 0; a < PlayerData["dragonBallPlayer"].length; a++) {
-            const db = PlayerData["dragonBallPlayer"][a];
-            this.dragonBalls.push(new DragonBall(db["nb-stars"]));
-        }
+    constructor(hand, nbVoeuxRealise) {
+        // Main
+        this.hand = [];
+        hand.forEach(dbtemp => {
+            this.hand.push(new DragonBall(dbtemp["nb-stars"], dbtemp.coordonnees));
+        });
+
+        this.nbVoeuxRealise = nbVoeuxRealise;
+    }
+
+    get_nb_dragon_ball_recupere(){
+        return this.nbVoeuxRealise * NB_DRAGON_BALL + this.hand.length
     }
 }
