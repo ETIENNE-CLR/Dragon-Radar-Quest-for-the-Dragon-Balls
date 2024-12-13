@@ -12,29 +12,33 @@
 </head>
 
 <body>
-    <!-- Afficher les dragons balls-->
-    <div id="dragonBallsIndicator" class="col-12 pt-5 position-absolute top-50 start-50 translate-middle">
-        <h1 class="h2 text-center text-light mb-3">Vos Dragon Balls :</h1>
-        <div id="dragonBall-container" class="d-flex justify-content-around">
-            <div class="col-1">
-                <img class="displayedDragonBall" src="assets/img/dragon_balls/dragon_ball_02.png" alt="Dragon Ball à 2 étoiles">
+    <!-- Page d'accueil -->
+    <div id="home">
+        <!-- Afficher les dragons balls-->
+        <div id="dragonBallsIndicator" class="col-12 pt-5 position-absolute top-50 start-50 translate-middle">
+            <h1 class="h2 text-center text-light mb-3">Vos Dragon Balls :</h1>
+            <div id="dragonBall-container" class="d-flex justify-content-around">
+                <div class="col-1">
+                    <img class="displayedDragonBall" src="assets/img/dragon_balls/dragon_ball_02.png" alt="Dragon Ball à 2 étoiles">
+                </div>
             </div>
         </div>
-    </div>
     
-    <!-- Menu de navigation -->
-    <div class="d-flex justify-content-around">
-        <div id="btn_toRadar">
-            <img src="assets/img/logo_radar.png" alt="logo Dragon Ball Radar">
-            <p>Radar</p>
-        </div>
-        <div id="btn_toShenron">
-            <img src="assets/img/logo_shenron.png" alt="logo shenron">
-            <p>Invoquer Shenron</p>
+        <!-- Menu de navigation -->
+        <div class="d-flex justify-content-around">
+            <div id="btn_toRadar">
+                <img src="assets/img/logo_radar.png" alt="logo Dragon Ball Radar">
+                <p>Radar</p>
+           </div>
+           <div id="btn_toShenron">
+                <img src="assets/img/logo_shenron.png" alt="logo shenron">
+                <p>Invoquer Shenron</p>
+           </div>
         </div>
     </div>
 
-    <!-- <div id="displayRadar">
+    <!-- Page du radar -->
+    <div id="displayRadar" class="d-none">
         <main id="radar">
             <div id="btnDBRadar-cont">
                 <div id="btnDBRadar"></div>
@@ -45,10 +49,19 @@
                 </div>
             </div>
         </main>
-    </div> -->
+    </div>
+
+    <!-- Page pour invoquer Shenron -->
+    <div id="invocationShenron" class="d-none"></div>
 </body>
 <script src="styles/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 <script src="frontend/localstorage.js"></script>
 <script src="frontend/display_view.js"></script>
+<script>
+    document.getElementById('btn_toRadar').addEventListener('click', function() {
+        // Changer la vue pour le radar
+        
+    });
+</script>
 
 </html>
