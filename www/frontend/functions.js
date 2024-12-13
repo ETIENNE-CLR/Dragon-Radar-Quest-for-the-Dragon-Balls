@@ -15,4 +15,6 @@ function hideAllPages() {
     page_Home.style.display = "none";
     page_Radar.style.display = "none";
     page_Shenron.style.display = "none";
+    console.log('Toutes les pages ont été cachées');
+    
 }

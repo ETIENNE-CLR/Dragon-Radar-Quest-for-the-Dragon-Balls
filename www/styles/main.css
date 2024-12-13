@@ -4,6 +4,12 @@
     src: url('../assets/fonts/gagalin/Gagalin-Regular.otf');
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
 body {
     background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
@@ -23,6 +29,7 @@ body {
 
 /* barre de navigation */
 #home_navbar {
+    left: 0;
     top: 75%;
     transform: translate(0, -50%);
 }
@@ -56,4 +63,24 @@ body {
     margin: 0;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+.retour {
+    top: 75%;
+    right: 0;
+    border: none;
+    margin: 0% 3%;
+    padding: 1% 5%;
+    font-size: 21px;
+    position: absolute;
+    border-radius: 6px;
+    color: whitesmoke;
+    font-family: 'Gagalin';
+    background-color: #363636;
+    letter-spacing: 1px;
+}
+
+.retour:active {
+    transform: scale(0.9);
+    transition: all 0.2s;
 }
