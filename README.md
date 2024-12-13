@@ -7,7 +7,7 @@
 - **Collecte de Dragon Balls** : Suivez votre progression en récupérant chaque boule.
 - **Invocation de Shenron** : Lorsque les 7 boules sont réunies, Shenron apparaît pour vous permettre de formuler un vœu.
 - **Effets sonores et animations** : Plongée immersive dans l’ambiance de la série.
-- **Position exacte** : Les 7 Dragons Balls seront dispersés dans un perimètre de 200 mètres (modifiable dans les paramètres)
+- **Position exacte** : Les 7 Dragons Balls seront dispersés dans un perimètre de 200 mètres.
 
 ## Installation
 ### Sur Android 🤖 (depuis votre téléphone)
@@ -45,10 +45,12 @@
 4. **Invoquez Shenron** : Une fois les 7 boules réunies, Shenron apparaît. Saisissez votre vœu et regardez-le se réaliser à l’écran !
 
 ## 🌟 Améliorations prévues
-- **Vœux personnalisés** : Permettre aux utilisateurs d’entrer un vœu personnalisé.
-- **Mode multijoueur** : Collaboration en ligne pour trouver les boules plus rapidement.
-- **Accessibilité mobile** : Adaptation de l’interface pour les smartphones.
-- **Enigmes pour trouver les Dragon Ball** : Avant de récupérer une Dragon Ball, une énigme généré aléatoirement sera sur votre chemin.
+1. **Invocation de combattants** : Grâce à des cristaux de ki, vous pourrez invoquer des combattants parmi l'univers de Dragon Ball.
+2. **Combattants** : Vous pourrez obtenir vos personnages préférés de la série et les entraîner afin qu'ils soient toujours prêt pour défendre la terre de potentiels menaces.
+    - Si un des vos combattants meurt en combat, vous pourrez le ramener à la vie grâce aux Dragon Ball. 
+3. **Mode multijoueur** : Collaboration en ligne pour trouver les boules plus rapidement.
+    - Vous pourrez aussi échanger vos Dragon Ball entre joueurs
+- **Difficulté adoptive** : plus vous aurez un niveau de joueur élevé, plus les Dragon Ball seront éparpillés plus loin.
 
 ---
 © 2024 Étienne Caulier - Ce projet est réalisé à des fins éducatives et de divertissement. Ce projet n’a aucun lien officiel avec la franchise Dragon Ball, Toei Animation ou Akira Toriyama.
