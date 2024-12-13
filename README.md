@@ -59,6 +59,7 @@
 5. **Difficulté adoptive** : plus vous aurez un niveau de joueur élevé, plus les Dragon Ball seront éparpillés plus loin.
 6. **Combats d'art martiaux** : Lorsque la Terre sera menacé, vous participerez avec une équipe composée de 5 de vos combattants dans d'épique combats pour essayer de protéger la Terre.
     - Si vous n'avais pas réussi à protéger la Terre, vous perdrez toute votre progression
+7. **Événements spéciaux** : Mettre des événements spéciaux (pour les fêtes, ...) (pas encore trop pensé à ça)
 
 ---
 © 2024 Étienne Caulier - Ce projet est réalisé à des fins éducatives et de divertissement. Ce projet n’a aucun lien officiel avec la franchise Dragon Ball, Toei Animation ou Akira Toriyama.
