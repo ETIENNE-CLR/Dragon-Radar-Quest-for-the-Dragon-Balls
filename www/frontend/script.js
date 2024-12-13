@@ -10,17 +10,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     await myDataManager.init();
 
     // Initialisation du joueur
-    let m'y Player = new Player(myDataManager.Data.player.hand,
-            myDataManager.Data.player["nb-voeux-realise"]
+    let myPlayer = new Player(myDataManager.Data.player.hand, myDataManager.Data.player["nb-voeux-realise"]);
     let myAppManager = new AppManager(
-        new Player(
-            
-        ),
+        myPlayer,
         myDataManager.Data["dragons-balls"],
         myDataManager.Data.options.kmPerimeter
     );
+
+    // Afficher la page principale
+    displayHomePage(myPlayer);
 });
 
 
-// Afficher la page principale
-// displayHomePage();
+
