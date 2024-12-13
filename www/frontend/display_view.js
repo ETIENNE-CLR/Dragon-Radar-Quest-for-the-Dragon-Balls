@@ -10,13 +10,10 @@ function displayRadarPage() {
 }
 
 function displayUsersDragonBalls() {
-    // Récuperation des variables utiles
-    let playerData = get_json_data();
-    const div_dragonBall_container = document.getElementById('dragonBall-container');
-
     // Afficher les dragons balls
+    const div_dragonBall_container = document.getElementById('dragonBall-container');
     div_dragonBall_container.innerHTML = '';
-    let userDragonsBalls = playerData["dragons-balls"];
+    let userDragonsBalls = playerObject.dragonBalls;
     if (userDragonsBalls.length > 0) {
         const ALIGNEMENTS = [
             "align-items-start",
@@ -32,8 +29,10 @@ function displayUsersDragonBalls() {
 
             // Image
             const img_ball = document.createElement("img");
-            img_ball.alt = `Dragon Ball à ${uneDragonBall['nb-stars']} étoile${"s"}`;
-            img_ball.src = `assets/img/dragon_balls/dragon_ball_${uneDragonBall['nb-stars'].toString().padStart(2, '0')}.png`;
+            console.log(uneDragonBall);
+            
+            img_ball.alt = `Dragon Ball à ${uneDragonBall.nbStars} étoile${"s"}`;
+            img_ball.src = `assets/img/dragon_balls/dragon_ball_${uneDragonBall.nbStars.toString().padStart(2, '0')}.png`;
             db_show.appendChild(img_ball);
         });
     } else {

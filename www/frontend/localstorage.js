@@ -1,34 +1,54 @@
 const DATA_KEY = 'Dragon_Radar_saved_data';
 const DEFAULT_DATA =
 {
-    "profil": {
-        "name": "Etienne",
-        "level": 15,
-        "nb-times-shenron": 2,
-        "image": "url"
-    },
-    "dragons-balls": [
+    "dragonBallPlayer": [
         {
             "nb-stars": 1
+        }
+    ],
+    "radar": [
+        {
+            "nb-stars": 2,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
         },
-        // {
-        //     "nb-stars": 2
-        // },
-        // {
-        //     "nb-stars": 3
-        // },
-        // {
-        //     "nb-stars": 4
-        // },
-        // {
-        //     "nb-stars": 5
-        // },
-        // {
-        //     "nb-stars": 6
-        // },
-        // {
-        //     "nb-stars": 7
-        // }
+        {
+            "nb-stars": 3,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 4,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 5,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 6,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
+        },
+        {
+            "nb-stars": 7,
+            "coordonnees": [
+                46.2237,
+                6.1118
+            ]
+        }
     ]
 }
 
@@ -61,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function reset_localStorage() {
     set_json_data(DEFAULT_DATA);
     window.location.reload();
+    console.log('Les données ont été réinitialisées');
 }
 
 /**

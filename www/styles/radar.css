@@ -42,7 +42,7 @@ body {
     box-shadow: inset 0px 0px 3px 0px #ffffff;
     transform: scale(1);
     z-index: 1;
-    transition: all 0.15s;
+    transition: all 0.18s;
     margin: 0;
     margin-bottom: -2%;
 }
