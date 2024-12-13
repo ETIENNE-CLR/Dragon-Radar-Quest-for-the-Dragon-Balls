@@ -40,6 +40,15 @@ body {
     background-image: repeating-linear-gradient(to right, var(--RADAR-METAL-LINE-COLOR), var(--RADAR-METAL-LINE-COLOR) calc(var(--RADAR-METAL-LINE-WIDTH) * 1px), var(--RADAR-METAL-COLOR) calc(var(--RADAR-METAL-LINE-WIDTH) * 1px), var(--RADAR-METAL-COLOR));
     border: calc(var(--RADAR-METAL-LINE-WIDTH) * 1px) solid var(--RADAR-METAL-LINE-COLOR);
     box-shadow: inset 0px 0px 3px 0px #ffffff;
+    transform: scale(1);
+    z-index: 1;
+    transition: all 0.15s;
+    margin: 0;
+    margin-bottom: -2%;
+}
+#btnDBRadar:active {
+    filter: brightness(1.5);
+    margin-bottom: -7%;
 }
 
 #bodyDBRadar-cont {
